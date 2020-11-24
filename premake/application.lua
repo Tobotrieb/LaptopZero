@@ -8,7 +8,7 @@ function application(apptype, name, link_against, external_defines)
 	project(name)
 		kind(apptype)
 		location("build")
-		targetdir("bin/%{prj.name}/%{cfg.longname}_%{cfg.architecture}")
+		targetdir("bin/%{wks.name}/%{cfg.longname}_%{cfg.architecture}")
 		files({
 			"include/%{prj.name}/**.h",
 			"src/%{prj.name}/**.cpp",

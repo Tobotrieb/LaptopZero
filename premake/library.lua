@@ -7,7 +7,7 @@ function library(libtype, name, link_against, external_defines)
 	project(name)
 		kind(libtype)
 		location("build")
-		targetdir("lib")
+		targetdir("bin/%{wks.name}/%{cfg.longname}_%{cfg.architecture}")
 		files({
 			"include/%{prj.name}/**.h",
 			"src/%{prj.name}/**.cpp",

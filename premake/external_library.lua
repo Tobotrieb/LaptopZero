@@ -6,7 +6,7 @@ function external_library(libtype, name, external_defines)
 	project(name)
 		kind(libtype)
 		location("build")
-		targetdir("lib")
+		targetdir("bin/%{wks.name}/%{cfg.longname}_%{cfg.architecture}")
 		includedirs("include") --not needed, defined in include/name.lua
 		warnings("Off")
 		include("include/" .. name .. ".lua")

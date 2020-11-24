@@ -1,0 +1,10 @@
+defines:
+	SYSTEM_...
+		WINDOWS
+		LINUX
+		MACOSX
+		WII
+
+	CONFIGURATION_...
+		RELEASE
+		DEBUG

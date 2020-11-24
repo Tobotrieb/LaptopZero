@@ -14,24 +14,24 @@ function setup(workspace_name, target_system)
 		filter {"configurations:Debug"}
 			symbols("On")
 			runtime("Debug")
-			defines("DEBUG")
+			defines("CONFIGURATION_DEBUG")
 	
 		filter {"configurations:Release"}
 			optimize("On")
 			runtime("Release")
-			defines({"NDEBUG", "RELEASE", })
+			defines("CONFIGURATION_RELEASE")
 		
 		filter {"system:windows"}
-			defines("WINDOWS")
+			defines("SYSTEM_WINDOWS")
 		
 		filter {"system:linux"}
-			defines("LINUX")
+			defines("SYSTEM_LINUX")
 		
 		filter {"system:macosx"}
-			defines("MACOSX")
+			defines("SYSTEM_MACOSX")
 		
 		filter {"system:wii"}
-			defines("WII")
+			defines("SYSTEM_WII")
 			
 		filter {}
 	
