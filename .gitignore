@@ -1,0 +1,13 @@
+# Precompiled Headers
+*.gch
+*.pch
+
+#folders
+/bin
+/bin-int
+/lib
+/build
+/.vs
+
+#visual studio
+*.sln
